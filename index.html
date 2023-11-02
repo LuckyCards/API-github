@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/images/githubSymbol.png"
+      type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/assets/styles/style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Karla:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+    <title>API Github</title>
+  </head>
+  <body>
+    <header>
+      <h1>RepoViewer</h1>
+      <h2>Visualizador de repositórios Github</h2>
+
+      <form>
+        <span><ion-icon name="search-outline"></ion-icon></span>
+        <input type="text" id="textField" placeholder="Digite o usuário do Github..." />
+        <input type="submit" id="submitButton" value="Buscar"></input>
+      </form>
+    </header>
+    <main>
+      <div id="perfil"></div>
+      <ul></ul>
+    </main>
+
+    <script src="./src/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script> 
+  </body>
+</html>
