@@ -49,7 +49,6 @@ function submit() {
   clearList();
   if (textField.value != null) {
     getApiGitHub(textField.value);
-
     console.log("Acessando repositório de", textField.value, "...");
   }
 }
@@ -79,10 +78,17 @@ function addRepositorys(item) {
   }
 
   li.innerHTML += `
-  <span><ion-icon name="calendar-outline"> </ion-icon>Criado em: 
+  <span><ion-icon name="calendar-outline"></ion-icon>Criado em: 
   ${Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}
+  </span>
+  `;
+
+  li.innerHTML += `
+  <span><ion-icon name="today-outline"></ion-icon>Ultima modificação em: 
+  ${Intl.DateTimeFormat("pt-BR").format(new Date(item.updated_at))}
   </span>
   <hr>
   `;
+
   ul.appendChild(li);
 }
